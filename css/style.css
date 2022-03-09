@@ -38,6 +38,21 @@ body {
     padding: 1rem;
 }
 
+.headerClave button {
+    cursor: pointer;
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.10rem;
+    margin-top: 0.1rem;
+    width: 20%;
+    position: relative;
+    left: 160px;
+    background-color: #303178;
+    border: none;
+    color: #F7ECDE;
+}
+
 .cv {
     position: relative;
     width: 100%;

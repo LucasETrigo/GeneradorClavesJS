@@ -7,6 +7,7 @@ const minusculasLabel = document.getElementById("minusculas");
 const numeroLabel = document.getElementById("numero");
 const simbolosLabel = document.getElementById("simbolos");
 const generarBtn = document.getElementById("generar");
+const copiarLabel = document.getElementById("copiar");
 
 const mayusculas = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const minusculas = "abcdefghijklmnopqrstuvwxyz";
@@ -88,3 +89,21 @@ function generateX() {
 }
 
 generarBtn.addEventListener("click", generarClave);
+
+
+// Funcion para copiar clave generada
+copiarLabel.addEventListener("click", () => {
+    const textarea = document.createElement("textarea");
+    const password = clave.innerText;
+
+    if (!password) {
+        return;
+    }
+
+    textarea.value = password;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand("copy");
+    textarea.remove();
+    console.log("Password copied to clipboard");
+});
