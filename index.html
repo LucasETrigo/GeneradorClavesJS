@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+        <title>Generador de Claves</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body>
+        <div class="contenedor-clave">
+            <h1>Generador de <span>Claves Random</span></h1>
+            <div class="headerClave">
+                <div class="cv">
+                    <span id="clave">TuClave@#l23.*</span>
+                </div>
+            </div>
+            <div class="bodyClave">
+                <div class="formulario">
+                    <label for="caracteres">Cantidad de caracteres</label>
+                    <input id="caracteres" min="2" max="30" value="15" type="number" />
+                </div>
+                <div class="formulario">
+                    <label for="mayusculas">Usar Mayusculas</label>
+                    <input id="mayusculas" type="checkbox" />
+                </div>
+                <div class="formulario">
+                    <label for="minusculas">Usar Minusculas</label>
+                    <input id="minusculas" type="checkbox" />
+                </div>
+                <div class="formulario">
+                    <label for="numero">Usar Numeros</label>
+                    <input id="numero" type="checkbox" />
+                </div>
+                <div class="formulario">
+                    <label for="simbolos">Usar Simbolos</label>
+                    <input id="simbolos" type="checkbox" />
+                </div>
+                <button class="generate" id="generar">
+                    Generar Clave
+                </button>
+            </div>
+        </div>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>

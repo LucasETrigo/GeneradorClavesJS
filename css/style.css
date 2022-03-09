@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    background-color: #e9cdc5;
+    min-height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.contenedor-clave {
+    position: relative;
+    width: 450px;
+}
+
+.contenedor-clave h1 {
+    font-size: 31px;
+    color: #141840;
+    font-weight: bold;
+}
+
+.contenedor-clave h1 span {
+    color: #ed7946;
+    text-shadow: 1px 1px #141840;
+}
+
+::placeholder {
+    color: #f5cac2;
+}
+
+.headerClave {
+    padding: 1rem;
+}
+
+.cv {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    margin: 15px 0 10px;
+    padding: 0px 20px;
+    font-size: 25px;
+    letter-spacing: 4px;
+    color: #141840;
+    border: none;
+    background: transparent;
+    outline: none;
+    border-radius: 8px;
+    box-shadow: -4px -4px 10px rgba(250, 229, 223, 1), inset 4px 4px 10px rgba(0, 0, 0, 0.07), inset -4px -4px 10px rgba(250, 229, 223, 1), 4px 4px 10px rgba(0, 0, 0, 0.07);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bodyClave {
+    padding: 0 1rem 1rem;
+}
+
+.formulario {
+    color: #141840;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.75rem 0;
+}
+
+.generate {
+    background-color: #303178;
+    border: none;
+    color: #F7ECDE;
+    cursor: pointer;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    width: 100%;
+}
