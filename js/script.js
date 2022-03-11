@@ -106,4 +106,8 @@ copiarLabel.addEventListener("click", () => {
     document.execCommand("copy");
     textarea.remove();
     console.log("Password copied to clipboard");
+
+    localStorage.setItem('Password', JSON.stringify(password))
 });
+
+
