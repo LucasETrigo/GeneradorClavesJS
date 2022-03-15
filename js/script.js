@@ -108,6 +108,10 @@ copiarLabel.addEventListener("click", () => {
     console.log("Password copied to clipboard");
 
     localStorage.setItem('Password', JSON.stringify(password))
+
+    Swal.fire(
+        ':D',
+        'Clave copiada exitosamente!',
+        'success'
+    )
 });
-
-
