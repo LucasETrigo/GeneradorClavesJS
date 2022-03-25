@@ -1,3 +1,4 @@
+
 // VARIABLES DOM
 
 const clave = document.getElementById("clave");
@@ -115,3 +116,23 @@ copiarLabel.addEventListener("click", () => {
         'success'
     )
 });
+
+
+
+
+// Utilizacion de una API de chistes random usando fetch, async y await
+
+let chisteBtn = document.getElementById('chisteBtn')
+let chisteTxt = document.getElementById('chisteTxt')
+
+chisteBtn.addEventListener('click', getJoke)
+
+async function getJoke() {
+    const jokeInfo = await fetch('https://icanhazdadjoke.com/', {
+        headers: {
+            'Accept': 'application/json'
+        }
+    });
+    const jokeObject = await jokeInfo.json();
+    chisteTxt.innerHTML = jokeObject.joke;
+}
