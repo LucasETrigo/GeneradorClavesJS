@@ -1,3 +1,11 @@
+/* ------------------------------------------------------------------------
+            Proyecto Final - Javascript
+
+            Aplicacion Web que permite al usuario generar claves random
+            El usuario ingresa valores que desee
+---------------------------------------------------------------------------*/
+
+
 
 // VARIABLES DOM
 
@@ -110,6 +118,8 @@ copiarLabel.addEventListener("click", () => {
 
     localStorage.setItem('Password', JSON.stringify(password))
 
+
+    //Utilizo libreria para mostrar el mensaje cuando un usuario clickea en copiar clave
     Swal.fire(
         ':D',
         'Clave copiada exitosamente!',
